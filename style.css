@@ -1,0 +1,83 @@
+:root {
+    --main-bg-color-one: #23424A;
+    --main-bg-color-two: #136C72;
+    --main-bg-color-three: #38CFD9;
+    --font-color-one: #FFFFFF;
+    --font-color-two: #87629A;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.container-fluid {
+    background-color: var(--main-bg-color-one);
+}
+
+.container-fluid-green {
+    background-color: var(--main-bg-color-two);
+}
+
+.container-fluid-green h3, .container-fluid-green p {
+    color: var(--font-color-one);
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 30px;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h3 {
+    color: var(--font-color-two);
+    font-size: 2rem;
+}
+
+.div-content {
+    color: var(--font-color-one);
+    width: 80%;
+}
+
+.div-content p {
+    color: var(--font-color-one);
+    margin-bottom: 3rem;
+    width: 90%;
+}
+
+.content-description {
+    font-size: 1.2rem
+}
+
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase; 
+    color: var(--main-bg-color-one);
+    font-weight: 900;
+    background-color: var(--main-bg-color-three);
+    padding: .75em 2em;
+    border-radius: 100px;
+    border: 0;
+    cursor: pointer;
+}
+
+.btn:active, .btn:hover {
+    opacity: .75;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+.col {
+    text-align: center;
+}
+
+.col+.col {
+    margin-left: 1.5em;
+}
